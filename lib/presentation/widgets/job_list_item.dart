@@ -27,16 +27,17 @@ class JobListItem extends StatelessWidget {
         child: Column(children: [
           Row(
             children: [
-              Container(
-                width: 54,
-                height: 54,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(K.borderRadius),
-                  image: DecorationImage(
-                    image: NetworkImage(job.logo),
+              if (job.logo.isNotEmpty)
+                Container(
+                  width: 54,
+                  height: 54,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(K.borderRadius),
+                    image: DecorationImage(
+                      image: NetworkImage(job.logo),
+                    ),
                   ),
                 ),
-              ),
               K.space8,
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
