@@ -43,13 +43,13 @@ The project follows Clean Architecture, which is divided into three main layers:
    - Version: ^2.0.0
    - Usage: Simplifies equality comparisons for classes.
 
-7. **freezed**:
+7. **freezed**: ^2.3.2
 
 ## Getting Started
 
 1. Ensure you have Flutter installed on your machine.
 2. Clone this repository.
-3. Run ``flutter clean` to clean builds
+3. Run `flutter clean` to clean builds
 4. Run `flutter pub get` to install dependencies.
 5. Run `dart run build_runner build --delete-conflicting-outputs` to generat freezed models
 6. Run `flutter run` to start the application.
@@ -61,3 +61,9 @@ The project is set up for both unit and widget testing. To run the tests, use th
 ```
 flutter test
 ```
+
+## Screenshots
+
+Job Listing Screen             |  Job Details Screen
+:-------------------------:|:-------------------------:
+![Job Listing Screen](screenshots/job_list.png) |  ![Job Details Screen](screenshots/job_detail.png)

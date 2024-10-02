@@ -21,6 +21,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Job Listing App',
       theme: AppTheme.lightTheme,
+      debugShowCheckedModeBanner: false,
       home: BlocProvider(
         create: (_) => GetIt.instance<JobListBloc>()..add(LoadJobList()),
         child: const JobListPage(),
