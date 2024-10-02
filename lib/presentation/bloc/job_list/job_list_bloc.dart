@@ -1,12 +1,14 @@
 import 'package:equatable/equatable.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:job_board/domain/entities/job.dart';
+import 'package:mockito/annotations.dart';
 
 import '../../../domain/usecases/get_job_list.dart';
 
 part 'job_list_event.dart';
 part 'job_list_state.dart';
 
+@GenerateMocks([GetJobList])
 class JobListBloc extends Bloc<JobListEvent, JobListState> {
   final GetJobList getJobList;
 
